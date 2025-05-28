@@ -1,0 +1,151 @@
+:root {
+  font-size: 16px;
+  --color-bg: #f9f9f9;
+  --color-white: #fff;
+  --color-black: #222;
+  --color-gray-light: #ccc;
+  --color-gray-dark: #555;
+  --color-accent: #444;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-black);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 700px;
+  margin: 0 auto;
+  padding: 30px 30px 50px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+input, select {
+  margin: 0.5rem 1rem 0.5rem 0;
+  padding: 6px 10px;
+  border: 1px solid var(--color-gray-light);
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  transition: border-color 0.3s ease;
+}
+
+input[type='number'] {
+  width: 30px;
+}
+
+button#submit, button#priority, button#remove {
+  padding: 5px 10px;
+  margin-top: 1rem;
+  background-color: royalblue;
+  color: white;
+  border-style: none;
+}
+
+
+button#remove {
+  background-color: firebrick;
+}
+
+table {
+  margin-top: 2rem;
+  border: solid 2px lightgray;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 900px;
+  font-size: 1.1rem;
+  margin: auto;
+}
+
+th, td {
+  border: solid 1px lightgray;
+  border-collapse: collapse;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: beige;
+  padding: 0 0.5rem 0;
+}
+
+th#todoLabel {
+  width: 300px;
+}
+
+th#dateLabel {
+  width: 150px;
+}
+
+td {
+  text-align: center;
+  word-break: break-word;
+  white-space: normal;
+  max-width: 200px;
+  padding: 8px;
+}
+
+td input[type='checkbox'] {
+  margin: 0;
+}
+
+
+button.delete-btn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.delete-btn:hover {
+  background-color: firebrick;
+}
+
+#sort {
+  margin-top: 1rem;
+}
+#sort button {
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 0.95rem;
+  background-color: #555;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+#sort button:hover {
+  background-color: #ddd;
+}
+
+.sort-button {
+  width: 180px;           /* 幅を固定 */
+  padding: 8px 12px;
+  margin: 0.5rem;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sort-button:hover {
+  background-color: #333;
+}
+
+textarea {
+  resize: none;
+  width:300px;
+  height: 15px;
+}
