@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.querySelector(".next").addEventListener("click", () => {
-        console.log(1);
         index = (index + 1) % slides.length;
         update();
     });
